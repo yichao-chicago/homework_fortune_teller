@@ -1,2 +1,3 @@
-<h1><%= @prediction.capitalize %></h1>
-<h1><%= @z.fortune %></h1>
+<h1><%= @sign.capitalize %></h1>
+<p><%= Zodiac.find_by({:sign => @sign}).fortune %></p>
+<p><%= @prediction %></p>
